@@ -32,6 +32,12 @@ input[type=text]:focus{
     margin-right: 1rem !important;
     justify-content: unset;
 }
+
 .btn {
     width: 375px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
 }

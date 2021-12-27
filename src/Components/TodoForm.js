@@ -11,7 +11,7 @@ export const todoForm = ({setInputText, inputText, setTodos, todos}) => {
         if(inputText.length){
             setTodos([...todos, {text: inputText, completed: false, id: Math.random() * 1000}])
         }
-        setInputText(e.target.value)
+        setInputText("")
     }
     return (
         <form className='add text-center my-4'>
