@@ -1,0 +1,37 @@
+
+body {
+    background: #352f5b !important;
+}
+
+.container {
+    max-width: 400px !important;
+}
+
+input[type=text],
+input[type=text]:focus{
+    border: none;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    max-width: 400px;
+}
+
+.todos li {
+    background: #423a6f;
+    color: #fff;
+}
+
+.delete {
+    cursor: pointer;
+    color: white;
+}
+
+
+.check {
+    color: white;
+    display: flex;
+    margin-right: 1rem !important;
+    justify-content: unset;
+}
+.btn {
+    width: 375px;
+}
