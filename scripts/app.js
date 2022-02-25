@@ -21,19 +21,13 @@ const updateUi = async(data) => {
         const iconSrc = `./img/icons/${weather.WeatherIcon}.svg`;
         icon.setAttribute('src', iconSrc);
 
-        let timeSrc = null;
-
-        if (weather.IsDayTime) {
-          timeSrc = "./img/day.svg";
-        } else {
-          timeSrc = "./img/night.svg";
-        }
+        let timeSrc = weather.IsDayTime ? "img/day.svg" : "img/night.svg";
+       
         time.setAttribute('src' ,timeSrc)
         // Remove display none classList if exists
         if(card.classList.contains('d-none')){
             card.classList.remove('d-none');
         }
-
         
 }
 
@@ -46,7 +40,6 @@ const updateCity = async (city) => {
 
 cityForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
   // Get city data
   const city = cityForm.city.value.trim();
   cityForm.reset();

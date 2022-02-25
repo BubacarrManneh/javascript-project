@@ -7,6 +7,10 @@ body {
   max-width: 400px !important;
 }
 
+form label {
+  color: rgb(0, 92, 128);
+}
+
 .icon{
   position: relative;
   top: -50px;
