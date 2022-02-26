@@ -1,14 +1,26 @@
 body {
+  background-image: url("img/weather-bg.jpeg");
+  background-size: cover;
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
   letter-spacing: 0.2em;
   font-size: 0.8em;
 }
 
 .container {
   max-width: 400px !important;
+  margin-top: 2% !important;
 }
 
 form label {
-  color: rgb(0, 92, 128);
+  color: white;
+  font-size: 0.8rem;
+}
+
+form input {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .icon{
