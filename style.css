@@ -8,21 +8,26 @@ body {
 }
 
 .container {
-  max-width: 400px !important;
-  margin-top: 2% !important;
+  max-width: 400px;
 }
 
 form label {
   color: white;
-  font-size: 0.8rem;
+}
+
+@media (max-width: 750px) {
+  form label {
+    font-size: 0.8rem;
+  }
 }
 
 form input {
-  text-align: center;
   font-family: sans-serif;
   font-weight: bold;
 }
-
+form ::placeholder {
+  text-align: center;
+}
 .icon{
   position: relative;
   top: -50px;
